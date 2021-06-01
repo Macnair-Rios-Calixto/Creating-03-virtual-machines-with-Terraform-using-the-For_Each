@@ -4,8 +4,8 @@ terraform {
 }
 
 provider "azurerm" {
-    subscription_id   = "Insira a sua Subscription"
-    tenant_id         = "Insira o seu Tenant"
+    subscription_id   = "Enter your Subscription"
+    tenant_id         = "Enter your Tenant"
     features {}
 }
 
