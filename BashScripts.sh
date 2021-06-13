@@ -1,12 +1,12 @@
 #!/bin/bash
 #Conect and set Subscription Context in Azure
 az login
-az account set --subscription "6ca698bd-b0ea-4352-aab0-51f1871ae9c9"
+az account set --subscription "xxxxxxxxxxxxxxxxxxxxxxxxx"
 
 
 #Set Variables for Storage account 
-RESOURCE_GROUP_NAME=dev-storage-rg
-STORAGE_ACCOUNT_NAME=stoprojcontosodevops
+RESOURCE_GROUP_NAME=RG-Terraform
+STORAGE_ACCOUNT_NAME=stoprojterraform001
 CONTAINER_NAME=container
 
 
@@ -26,3 +26,4 @@ az storage container create --name $CONTAINER_NAME --account-name $STORAGE_ACCOU
 echo "storage_account_name: $STORAGE_ACCOUNT_NAME"
 echo "container_name: $CONTAINER_NAME"
 echo "access_key: $ACCOUNT_KEY"
+
